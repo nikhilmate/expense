@@ -1,0 +1,14 @@
+todo:
+1. daily expense sheet
+    i.   view monthly expense sheet (daily expense sheet)
+    ii.  link for expense sheet
+    iii. seperate expense sheet
+    iv.  filtering expense sheet
+
+2. custom expense sheet
+    i.   view all expense sheet
+    ii.  link for expense sheet
+    iii. seperate expense sheet
+    iv.  filtering expense sheet
+
+3. summery loss or gain in budget
