@@ -10,8 +10,9 @@ const Onboarding = (props) => {
             <main className="main__container">
                 <main className="main__app main-onboarding">
                     <section className="section__onboarding">
-                        <Onboard />
-                        {/* <EmailForm /> */}
+                        {
+                            props.onboarding ? <><EmailForm /></> : <><Onboard /></>
+                        }
                     </section>
                 </main>
             </main>
@@ -22,7 +23,8 @@ const Onboarding = (props) => {
 const mapStateToProps = (state) => {
     const { session } = state
     return {
-        onboarding: session.onboarding
+        onboarding: session.onboarding,
+        logged: session.logged
     }
 }
 

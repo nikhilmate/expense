@@ -30,3 +30,20 @@ export const generateDays = (dateInstance) => {
         return days
     } else return false
 }
+
+export const isValidEmail = (_email) => {
+    let _pattern = /^([\w-.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
+        _test = _pattern.test(_email)
+    if (_test === true) return true
+    else return false
+} 
+
+export const uuid_r = () => {
+    let randomString = (length, chars) => {
+        var result = '';
+        for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+        return result;
+    }
+    let rString = randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    return rString;
+}

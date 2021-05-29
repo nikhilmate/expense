@@ -16,7 +16,7 @@ export const sessionEnd = () => ({
     type: SESSION_END
 })
 
-export const signIn = (userDetails) => ({
+export const signIn = () => ({
     type: SIGN_IN
 })
 

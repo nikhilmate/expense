@@ -8,22 +8,19 @@ const AppLoader = (props) => {
     useEffect(() => {
         setTimeout(() => {
             props.setApploading({ apploading: false })
-        }, 2500);
+        }, 1500);
     })
     return (
         <>
             {
-                props.apploading ?
+                props.apploading &&
                     <div className="main__loader">
                         <div className="wrap__loader-ui">
                             <LoaderIcon className="apploader-icon" width={160} height={160} />
                         </div>
                     </div>
-                    :
-                    <>
-                        {props.children}
-                    </>
             }
+            {props.children}
         </>
     )
 }
