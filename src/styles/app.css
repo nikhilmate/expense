@@ -1,0 +1,97 @@
+:root {
+  --main-font: 'Poppins', Arial, Helvetica, sans-serif;
+  --header-height: 56px;
+  --sidebar-width: 240px;
+  --sidebar-width-negative: -240px;
+}
+
+body,
+.main__viewport {
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  overflow-x: hidden;
+  min-height: 100%;
+  background-color: #FFF;
+  color: #333;
+}
+
+.main__viewport {
+  height: 100vh;
+}
+
+.main__container {
+  margin: 0 auto;
+  max-width: 768px;
+  border: none;
+  border-left: 1px solid rgb(230, 230, 230);
+  border-right: 1px solid rgb(230, 230, 230);
+  background-color: #fbf7f4;
+  overflow: hidden;
+}
+
+.main__container,
+.main__app {
+  height: 100%;
+}
+
+.container__main {
+  /* max-width: 1170px; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow-x: hidden;
+}
+
+/* onboarding */
+/* end */
+
+/* dashboard */
+.main-dashboard {
+  display: flex;
+  width: calc(100% + var(--sidebar-width));
+  min-width: 560px;
+  transform: translateX(var(--sidebar-width-negative));
+  transition: all .6s ease;
+}
+
+.section__sidebar {
+  width: var(--sidebar-width);
+  background-color: #FFF;
+}
+
+.section__appbody {
+  width: calc(100% - var(--sidebar-width));
+  height: 100%;
+  position: relative;
+}
+
+.wrap__scroll-appbody {
+  height: calc(100% - var(--header-height));
+  overflow-y: auto;
+}
+
+.main-dashboard.active--sidebar {
+  transform: translateX(0px);
+}
+
+.main-dashboard.active--sidebar .sidebar--overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.main-dashboard.active--sidebar .section__sidebar {
+  z-index: 11;
+  box-shadow: 2px 3px 15px -4px rgba(0, 0, 0, 0.5);
+}
+
+/* end */
