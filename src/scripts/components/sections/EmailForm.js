@@ -45,7 +45,7 @@ const EmailForm = (props) => {
             <div className="wrap__sign-in-box">
                 <form onSubmit={signInFormHandler} className="form__sign-in">
                     <div className="wrap__input-field">
-                        <input onChange={emailInputHandler} value={emailID} type="text" name="email-address" className="comn-input-form input__email-form" placeholder="Email address" />
+                        <input onChange={emailInputHandler} autoComplete="off" value={emailID} type="text" name="email-address" className="comn-input-form input__email-form" placeholder="Email address" />
                     </div>
                     <div className="wrap__submit-field">
                         { errorMsg && <p className="form-error-msg">Enter valid email address</p>}

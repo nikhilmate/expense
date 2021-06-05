@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { toggleSidebar } from '../../actions/domActions'
 import Header from '../dom/Header'
+import HandleAppBody from '../../controller/appbody.handler'
 
 const Appbody = ({ isSidebarVisible, toggleSidebarVisible }) => {
     
@@ -10,7 +11,9 @@ const Appbody = ({ isSidebarVisible, toggleSidebarVisible }) => {
     return (
         <section className="section__appbody">
             <Header />
-            <div className="wrap__scroll-appbody"></div>
+            <div className="wrap__scroll-appbody">
+                <HandleAppBody />
+            </div>
             <div onClick={(overlayClickHandler)} className="sidebar--overlay"></div>
         </section>
     )

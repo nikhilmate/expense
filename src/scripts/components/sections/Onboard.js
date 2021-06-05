@@ -10,7 +10,7 @@ const Onboard = ({ onBoardingHandler }) => (
         </div>
         <h1 className="h1_onboard-main">Welcome to <span className="main-title">Expense Tracker</span></h1>
         <h2 className="h2_onboard-main">Easy and simple dashboard to track your expenses.</h2>
-        <a onClick={onBoardingHandler} className="comn-btn btn_get-started">Get Started</a>
+        <button onClick={onBoardingHandler} className="comn-btn btn_get-started">Get Started</button>
     </div>
 )
 

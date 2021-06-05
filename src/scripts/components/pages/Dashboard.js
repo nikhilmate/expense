@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import Appbody from '../sections/Appbody'
 import Sidebar from '../sections/Sidebar'

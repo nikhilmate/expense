@@ -17,3 +17,7 @@ export const INIT_DOM_STATE = {
 export const INIT_LOADER_STATE = {
     apploading: true
 }
+
+export const INIT_APPBODY_STATE = {
+    expenses: []
+}

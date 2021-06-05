@@ -8,7 +8,7 @@ const AppLoader = (props) => {
     useEffect(() => {
         setTimeout(() => {
             props.setApploading({ apploading: false })
-        }, 1500);
+        }, 500);
     })
     return (
         <>
